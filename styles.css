@@ -1,0 +1,242 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4 #333;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: linear-gradient(120deg, #3720e5, #32b7ff);
+  color: #ffffff;
+  position: relative;;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgb (0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 60px;
+  font-style: unset;
+  font-family: 'Poppins', sans-serif;
+  animation: bounce 2s infinite;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header-text h2 {
+  font-size: 30px;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+.nav-links li a {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+#about {
+  background: #e1e1e1;
+  padding: 50px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  animation: fadeIn 2s;
+}
+
+.about-text {
+  max-width: 1000px;
+  text-align: justify;
+  animation: fadeIn 1.5s;
+}
+
+.about-text h2{
+ font-size: 35px;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ text-align: left;
+ font: optional;
+ font-style: italic;
+}
+
+.biodata {
+  background: linear-gradient(120deg, #3720e5, #57b2e3);
+  color: #ffffff;
+  text-align: left;
+  margin-left: 10%;
+  height: 90px;
+  width: 350px;
+  border-radius: 5%;
+}
+
+
+.biodata ul li{
+  margin-top: 4px;
+  margin-bottom: 2px;
+  margin-left: -15px;
+}
+
+
+#projects {
+  background: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.project-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  background: #fff;
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project a{
+  color: #3720e5;
+}
+
+/* Contact Section */
+#contact {
+  background: linear-gradient(120deg, #3720e5, #80C4E9);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #3720e5;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+#contact .btn:hover {
+  background: #adacac;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.about-text{
+  font-family:'Arial Narrow', 'sans-serif';
+  font-style: oblique;
+}
+
+.about-text p {
+  margin-left: 10%;
+}
+.about-text h2{
+  margin-left: 10%;
+}
+
+#projects .btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  width: 60px;
+  background: #3720e5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
